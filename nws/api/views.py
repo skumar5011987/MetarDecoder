@@ -10,9 +10,8 @@ _logger = logging.getLogger(__name__)
 class NSWPing(APIView):
     
     def get(self, request):        
-        url = get_url('A302', '.TXT')
-        res = requests.get(url)
-        resp = api_response(res.status_code, res.reason, 'pong')
+        
+        resp = api_response(200, 'OK', 'pong')
         return JsonResponse(resp)    
 
 class NSWInfo(APIView):
