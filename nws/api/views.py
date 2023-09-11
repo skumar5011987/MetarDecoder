@@ -37,7 +37,7 @@ class NSWInfo(APIView):
             except Exception as exc:
                 _logger.error({'message':'Unable to parse meter codes','error':exc})
                 resp = api_response(response.status_code, response.reason, '')                
-                return JsonResponse(resp)
+                return resp
             qty = {
                 'BKN': 'broken',
                 'FEW': 'few',
