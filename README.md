@@ -4,7 +4,7 @@ This is a METAR code decoder project that decodes METAR weather reports based on
 # Prerequisites
 Before you start, make sure you have the following prerequisites installed on your macOS:
 
-1: Python 3.x
+1: Python 3.9
 2: git
 3: virtualenv
 4: pip (Python package manager)
